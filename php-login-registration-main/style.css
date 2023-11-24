@@ -16,6 +16,11 @@ p{
   font-size: 100px;
 }
 
+img{
+  height: 20px;
+  width: 20px;
+}
+
 h1{
     background-color: rgb(247, 197, 197);
     color: rgb(252, 252, 252);

@@ -15,12 +15,10 @@ else if($_SESSION['auth'] == "notauthR") {
     header('Location: registration.php');
 }
 
-$id = $_SESSION['user'];
-$query = "SELECT * FROM users WHERE login='$id'";
+$login = $_SESSION['user'];
+$query = "SELECT * FROM users WHERE login='$login'";
 $result = mysqli_query($link, $query) or die(mysqli_error($link));
 $user = mysqli_fetch_assoc($result);
-
-
 ?>
 
 <!DOCTYPE html>
@@ -45,6 +43,8 @@ $user = mysqli_fetch_assoc($result);
 	<input type="text" name="pass" value="<?= $user['pass'] ?>">
 	<p>email:</p>
 	<input type="text" name="mail" value="<?= $user['mail'] ?>">
+
+	<input type="hidden" name="admin" value="<?= $user['admin'] ?>">
 	<input type="submit" value="submit">
 </form> 
 

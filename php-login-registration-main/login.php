@@ -2,11 +2,6 @@
 include ("db.php");
 session_start();
 $_SESSION['auth'] = "notauth";
-
-
-
-
-
 ?>
 
 <!DOCTYPE html>
@@ -47,7 +42,7 @@ if (!empty($_POST['pass']) and !empty($_POST['login'])) {
         if($user["admin"] == 0)
         {
             $_SESSION['auth'] = "user";
-            $_SESSION['user'] = $login;
+            $_SESSION['user'] = $login;;
             header('Location: user.php');
             
         }

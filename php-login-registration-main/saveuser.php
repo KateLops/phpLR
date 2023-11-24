@@ -16,11 +16,11 @@
 	$pass = $_POST['pass'];
 	$mail = $_POST['mail'];
 	$admin = $_POST['admin'];
-	var_dump($_POST);
 
     $query = "UPDATE users SET
-		login='$login', pass='$pass', mail='$mail', admin='$admin' WHERE id='$id'";
+		login='$login', pass='$pass', mail='$mail', admin='$admin'
+	WHERE id=$id";
 
     mysqli_query($link, $query) or die(mysqli_error($link));
     header('Location: admin.php');
-	?>
+?>

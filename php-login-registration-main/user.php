@@ -14,6 +14,11 @@ else if($_SESSION['auth'] == "notauthI") {
 else if($_SESSION['auth'] == "notauthR") {
     header('Location: registration.php');
 }
+    $query = "SELECT * FROM items WHERE name='Chainik'";
+    $res = mysqli_query($link, $query);
+    $user = mysqli_fetch_assoc($res);
+    echo '<img src="'.$user['img'].'">'
+
 ?>
 
 <!DOCTYPE html>
