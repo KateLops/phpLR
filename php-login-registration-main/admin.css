@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Gabarito:wght@400;500&family=Ubuntu+Condensed&family=VT323&display=swap');
+
+a, h1 {
+    font-family: 'DotGothic16', sans-serif;
+}
+
+.h3 {
+    font-family: 'DotGothic16', sans-serif;
+}
+
+body{
+    font-family: 'DotGothic16', sans-serif;
+}
+
+.p1{
+  font-size: 100px;
+}
+
+h1{
+    
+    color: rgb(247, 197, 197);
+    font-size: 40px;
+    margin-top: 100px;
+   text-align: center;
+}
+
+.img{
+    height: 200px;
+    width: 200px;
+}
+h2{
+    color: rgb(247, 197, 197);
+    font-family: 'DotGothic16', sans-serif;
+    font-size: 20px;
+    margin-top: 100px;
+    text-align: center;
+}
+body{
+    
+    width: auto;
+    height: auto;
+    background-image: url(ce9a58fc90aeedd0fdec474107df9f05.gif);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 600px;
+    height: 200px;
+    
+    border-radius: 20px;
+    margin: auto;
+    margin-top:200px;
+}
+.main2{
+    
+    align-items: center;
+    justify-content: space-around;
+    width: 500px;
+    height: auto;
+    background-color: white;
+    border-radius: 20px;
+    margin: auto;
+    margin-top:100px;
+}
+
+.col1{
+    width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}

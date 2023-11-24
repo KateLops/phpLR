@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Gabarito:wght@400;500&family=Ubuntu+Condensed&family=VT323&display=swap');
+
+input[type=text], input[type=password] {
+	appearance: none;
+	border: none;
+	outline: none;
+	border-bottom: .2em solid #E91E63;
+	background: rgba(#E91E63, .2);
+	border-radius: .2em .2em 0 0;
+	padding: .4em;
+	color: #E91E63;
+    font-family: 'DotGothic16', sans-serif;
+    width: 200px;
+}
+
