@@ -52,24 +52,30 @@ body{
     
     border-radius: 20px;
     margin: auto;
-    margin-top:200px;
+    margin-left:30px;
 }
+
+
+
 .main2{
-    
     align-items: center;
     justify-content: space-around;
-    width: 500px;
+    width: auto;
     height: auto;
     background-color: white;
     border-radius: 20px;
-    margin: auto;
-    margin-top:100px;
+    margin-left:30px;
 }
 
 .col1{
     width: 400px;
     margin: auto;
+    margin-left:30px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+}
+img{
+    height: 100px;
+    width: 100px;
 }

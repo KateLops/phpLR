@@ -30,13 +30,12 @@ else if($_SESSION['auth'] == "notauthR") {
 <body>
 <a class="pixel2" href="index.php">log out</a>
 <a class="pixel2" href="adduser.php">add user</a>
+
 <div class="main2">
     <h1>you are logged in as a <?php echo $var_value ?></h1>
     
     <h2>all users:</h2>
 <?php
-
-
 
 $query = 'SELECT * FROM users';
 $result = mysqli_query($link, $query);
@@ -54,8 +53,28 @@ while ($row = mysqli_fetch_assoc($result)) {
 }
 echo'</div>';
 ?>
-
-
 </div>
+<div class="main2">
+<?php
+
+$query = 'SELECT * FROM items';
+$result = mysqli_query($link, $query);
+echo'<div class="col1">';
+while ($row = mysqli_fetch_assoc($result)) {
+    echo '<div class="box">';
+    echo '<br>'.'user: '.$row['category'].'<br>';
+    echo 'user id: '.$row['name'].'<br>';
+    echo 'password: '.$row['description'].'<br>';
+    echo '<img src="'.$row['img'].'" >';  
+    
+    echo '<div >';
+	   echo  '<a class="pixel2" href="edit.php?id='.$row['id'].'">edit</a> <a class="pixel2" href="delete.php?id='.$row['id'].'">delete</a></li>';
+    echo '</div>';
+    echo '</div>';
+}
+echo'</div>';
+?>
+</div>
+
 </body>
 </html>

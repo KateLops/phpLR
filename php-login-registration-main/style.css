@@ -16,9 +16,21 @@ p{
   font-size: 100px;
 }
 
-img{
-  height: 20px;
-  width: 20px;
+.col1{
+  display: flex;
+}
+
+.box{
+  font-family: 'DotGothic16', sans-serif;
+  border: 5px solid salmon;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px 5px lightgray  ;
+  width: 300px;
+  height: auto;
+  display: flex;
+  margin-left: 30px;
+  flex-direction: column;
+  align-items: center;
 }
 
 h1{
@@ -29,10 +41,11 @@ h1{
    text-align: center;
 }
 
-.img{
+img{
     height: 200px;
     width: 200px;
 }
+
 h2{
     color: rgb(247, 197, 197);
     font-family: 'DotGothic16', sans-serif;
@@ -41,11 +54,11 @@ h2{
     text-align: center;
 }
 body{
-    
     width: 1900px;
     height: 500px;
     background-image: url(ce9a58fc90aeedd0fdec474107df9f05.gif);
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 .main{
     display: flex;
@@ -53,18 +66,18 @@ body{
     justify-content: space-around;
     width: 800px;
     height: 200px;
-    
     border-radius: 20px;
     margin: auto;
     margin-top:200px;
 }
 .main2{
+  border: 5px solid salmon;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    width: 500px;
-    height: 700px;
+    width: auto;
+    height: auto;
     background-color: white;
     border-radius: 20px;
     margin: auto;
