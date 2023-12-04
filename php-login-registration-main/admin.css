@@ -36,35 +36,26 @@ h2{
     text-align: center;
 }
 body{
-    
     width: auto;
     height: auto;
     background-image: url(ce9a58fc90aeedd0fdec474107df9f05.gif);
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
 .main{
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 600px;
-    height: 200px;
-    
-    border-radius: 20px;
-    margin: auto;
-    margin-left:30px;
+    justify-content: space-evenly;
 }
-
 
 
 .main2{
     align-items: center;
-    justify-content: space-around;
-    width: auto;
+    width: 500px;
     height: auto;
     background-color: white;
     border-radius: 20px;
-    margin-left:30px;
+    
 }
 
 .col1{
