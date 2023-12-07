@@ -14,6 +14,14 @@ else if($_SESSION['auth'] == "notauthI") {
 else if($_SESSION['auth'] == "notauthR") {
     header('Location: registration.php');
 }
+if ($_GET['id'] != null)
+{
+    $tempG = (int)$_GET['id'];
+    array_push($_SESSION['cart'],$tempG);
+    unset($_GET['$id']);
+    header("Location:user.php");
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -30,6 +38,7 @@ else if($_SESSION['auth'] == "notauthR") {
     <div class="main2">
         <div>
     <p class="p">you are logged in as a <?php echo $var_value ?></p>
+    <a href="cart.php"><p>Корзина</p></a>
     </div>
     <?php
     $query = 'SELECT * FROM items';
@@ -43,6 +52,9 @@ else if($_SESSION['auth'] == "notauthR") {
     echo '<p> description: '.$row['description'].'</p>'; 
     echo '<img src="'.$row['img'].'" >'.'';    
     echo '<p> price: '.$row['price'].'$ </p>';    
+    echo '<form method="GET"><input type="hidden" name="id" value="'.$row["id"].'">
+	    <input type="submit" name="but" value="В корзину" id="lgbtn">
+        </form>'.'</div>';
     echo '</div>';
 }
 echo'</div>';
